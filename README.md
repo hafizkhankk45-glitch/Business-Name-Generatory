@@ -1,20 +1,59 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# DuoName — 2-Word Business Name Generator (২-শব্দের ব্রান্ড নেম জেনারেটর)
 
-# Run and deploy your AI Studio app
+An instant 2-word business name generator with built-in Google Sheets export, AI brand evaluation, domain availability check, and 1,000+ name generator batch support.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/4f746249-3dfa-4e92-92ba-15bf9825bddc
+## 🚀 How to Run Locally (লোকাল কম্পিউটারে চালানোর নিয়ম)
 
-## Run Locally
+1. **Clone or download the repository:**
+   ```bash
+   git clone <YOUR_REPOSITORY_URL>
+   cd <REPOSITORY_FOLDER>
+   ```
 
-**Prerequisites:**  Node.js
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
+3. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:3000` in your browser.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🌐 Deploying to GitHub Pages (গিটহাব পেজেস এ ফ্রি ওয়েবসাইট বানানোর নিয়ম)
+
+This repository includes a pre-configured `.github/workflows/deploy.yml` file.
+
+1. **Push your code to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Configure GitHub Pages deploy"
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages in your Repository Settings:**
+   - Go to your GitHub Repository -> **Settings** -> **Pages**.
+   - Under **Build and deployment** -> **Source**, select **GitHub Actions**.
+   - Your site will automatically build and publish at `https://<username>.github.io/<repository-name>/`!
+
+---
+
+## ⚡ Hosting with Server Features (Render / Vercel / Railway)
+
+If you want full **Gemini AI Generator** support with server backend:
+- Deploy to **Render.com** or **Railway.app** using `npm run build` and `npm start`.
+- Add environment variable `GEMINI_API_KEY` in your hosting dashboard.
+
+---
+
+## 🛠 Features Included
+- **Unlimited 2-Word Names Generator** (Algorithmic & AI hybrid engine)
+- **1-Click Export to Google Sheets** (.csv download and direct paste)
+- **Brand Preview Modal** with color palettes and logo inspiration
+- **Domain Availability Checker** (.com, .io, .ai, .co, .app)
+- **Bengali & English UI Support**
